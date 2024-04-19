@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAYLOR SWIFT - ALL TO WELL </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="video-background">
+        <video autoplay loop muted>
+            <source src="video/background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="player">
+          <div id="info" class="info">
+              <h1 class="artist" id="artist">TAYLOR SWIFT</h1>
+              <P1 class="name" id="name">ALL TO WELL</P1>
+              <div class="progress-bar">
+                  <div class="bar"></div>
+              </div>
+          </div>
+          <div id="control-panel" class="control-panel">
+              <img id="img" class="album-art" src="assets/images.jpg">
+              <div id="image" class="album-art"></div>
+              <div class="controls">
+                    <button class="play-button" onclick="playPause()">
+                      <span class="icon">
+                        <img src="assets/download.png" alt="Play Icon">
+                        <i class="fa fa-play"></i>
+                    </button>
+                </div>
+                <div class="time-display">
+                    <span>0:00 / 0:00</span>
+                </div>
+            </div>
+        </div>
+        <audio src="music/music.mp3" class="song-track"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
